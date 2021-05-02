@@ -1,0 +1,279 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+}
+
+body{
+    margin: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+
+#col1{
+    background-image: linear-gradient(to bottom, rgb(59, 160, 218) 55%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 1px 17px;
+    background-repeat: repeat-y;
+    margin-right: 5px;
+}
+
+.main{
+    width: 100%;
+    height: 5vh;
+}
+
+.banner{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.box{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #19AEC2;
+    background: #19AEC2;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.3em;
+    position: relative;
+}
+
+.box:before{
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    background: #fff;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    left: -14px;
+    top: 5px;
+}
+
+.box:after{
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    background: #fff;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    right: -14px;
+    top: 5px;
+}
+
+.title{
+    text-align: center;
+    color: #19AEC2;
+}
+
+.spantitle{
+    color: #F7C119;
+}
+
+.ptitle{
+    color: #797979;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.heading1{
+    color: #37596D;
+}
+
+.col{
+    padding-left: 50px;
+}
+
+.p2{
+    color: #19AEC2;
+    font-weight: 500;
+}
+
+.images{
+    position: relative;
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon1{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    margin-left: 120px;
+    opacity: 0.5;
+    z-index: -1;
+    bottom:20px;
+    display: flex;
+    justify-content: center;
+}
+
+.singlerow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.singlerow2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.singlerow3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.icon2{
+    width: 150px;
+    height: 150px;
+}
+
+.icon3{
+    width: 130px;
+    height: 130px;
+    margin-left: 180px;
+    bottom:2px;
+    opacity: 0.5;
+    z-index: -1; 
+    position: absolute;
+}
+
+.icon4{
+    width: 100px;
+    height: 130px;
+    margin-left: 80px;
+    bottom:2px;
+    opacity: 0.5;
+    z-index: -1; 
+    position: absolute;
+}
+
+.five{
+    color: #F7C119;
+    font-size: 50px;
+}
+
+.nearly img{
+    height: 150px;
+    width: 110px;
+}
+
+.million{
+    padding-left: 50px;
+    text-align: right;
+}
+
+.age{
+    color: #F7C119;
+    font-size: 25px;
+}
+
+.agePercentage{
+    color: #37596D;
+    font-size: 50px;
+}
+
+.man{
+    height: 80px;
+    width: 40px;
+}
+
+.heading3{
+    padding-left: 50px;
+}
+
+.healthy{
+    color: #19AEC2;
+    font-size: 29px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.protein{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.protein img{
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    position: absolute;
+    bottom: 0%;
+    padding-left: 20px;
+}
+
+.disease{
+    color: #37596D;
+    font-size: 25px;
+}
+
+.people{
+    color: #F7C119;
+}
+
+.people span{
+    font-size: 20px;
+}
+
+.round{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #37596D;
+    border-radius: 50%;
+    /* margin-left: 0%;
+    margin-right: 0%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eating{
+    margin-bottom: 0%;
+}
+
+.rounded{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.round img{
+    height: 70px;
+    width: 60px;
+}
+
+@media screen and (max-width: 575px) {
+    #col1{
+        background-image: linear-gradient(to right, rgb(59, 160, 218) 55%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 17px 1px;
+    background-repeat: repeat-x;
+    margin-bottom: 10px;
+    }
+}
