@@ -1,41 +1,41 @@
-html{
+*{
     margin: 0;
     padding: 0;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 16px but now 1rem = 10px && 100% = 16px => 100/16 = 6.25% => 1px = 6.25% => 10p = 62.5% = 10px = 1rem*/
 }
 
 body{
-    margin: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
+    background-color: rgb(32, 32, 32);
 }
 
+.flyer{
+    width: 70%;
+    background-color: #fff;
+    padding: 3rem;
+}
 
-
-#col1{
+.mid{
     background-image: linear-gradient(to bottom, rgb(59, 160, 218) 55%, rgba(255, 255, 255, 0) 0%);
-    background-position: right;
-    background-size: 1px 17px;
+    background-position: center;
+    background-size: 0.1rem 2rem;
     background-repeat: repeat-y;
-    margin-right: 5px;
-}
-
-.main{
-    width: 100%;
-    height: 5vh;
+    width: 1%;
+    height: 100rem;
 }
 
 .banner{
-    margin-left: 1rem;
-    margin-right: 1rem;
     color: white;
     text-align: center;
 }
 
 .box{
-    height: 40px;
+    height: 4rem;
     width: 100%;
-    border: 1px solid #19AEC2;
+    border: 0.1rem solid #19AEC2;
     background: #19AEC2;
     border-left: none;
     border-right: none;
@@ -44,39 +44,41 @@ body{
     justify-content: center;
     padding: 0 1.3em;
     position: relative;
+    font-size: 2rem;
 }
 
 .box:before{
     position: absolute;
     content: "";
-    width: 28px;
-    height: 28px;
+    width: 2.8rem;
+    height: 2.8rem;
     z-index: 1;
     background: #fff;
     border-left: none;
     border-bottom: none;
     transform: rotate(45deg);
-    left: -14px;
-    top: 5px;
+    left: -1.4rem;
+    top: 0.5rem;
 }
 
 .box:after{
     position: absolute;
     content: "";
-    width: 28px;
-    height: 28px;
+    width: 2.8rem;
+    height: 2.8rem;
     z-index: 1;
     background: #fff;
     border-left: none;
     border-bottom: none;
     transform: rotate(45deg);
-    right: -14px;
-    top: 5px;
+    right: -1.4rem;
+    top: 0.5rem;
 }
 
 .title{
     text-align: center;
     color: #19AEC2;
+    font-size: 4.2rem;
 }
 
 .spantitle{
@@ -87,193 +89,253 @@ body{
     color: #797979;
     font-weight: bold;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.95rem;
 }
 
 .heading1{
     color: #37596D;
-}
-
-.col{
-    padding-left: 50px;
+    font-weight: 500;
+    font-size: 2.7rem;
 }
 
 .p2{
     color: #19AEC2;
-    font-weight: 500;
-}
-
-.images{
-    position: relative;
-}
-
-.icon{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-.icon1{
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    margin-left: 120px;
-    opacity: 0.5;
-    z-index: -1;
-    bottom:20px;
-    display: flex;
-    justify-content: center;
-}
-
-.singlerow{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.singlerow2{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.singlerow3{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.icon2{
-    width: 150px;
-    height: 150px;
-}
-
-.icon3{
-    width: 130px;
-    height: 130px;
-    margin-left: 180px;
-    bottom:2px;
-    opacity: 0.5;
-    z-index: -1; 
-    position: absolute;
-}
-
-.icon4{
-    width: 100px;
-    height: 130px;
-    margin-left: 80px;
-    bottom:2px;
-    opacity: 0.5;
-    z-index: -1; 
-    position: absolute;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .five{
     color: #F7C119;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 4.5rem;
+}
+
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.cake1{
+    z-index: 2;
+}
+
+.cake2{
+    margin-left: -5rem;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.fries1{
+    z-index: 2;
+}
+
+.fries2{
+    margin-left: -3rem;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.donut1{
+    z-index: 2;
+}
+
+.donut2{
+    margin-left: -3rem;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.juice1{
+    z-index: 2;
+}
+
+.juice2{
+    margin-left: -5rem;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.nearly{
+    width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .nearly img{
-    height: 150px;
-    width: 110px;
+    width: 60%;
 }
 
 .million{
-    padding-left: 50px;
     text-align: right;
+    line-height: 1.9rem;
+    width: 30%;
+}
+
+.rad{
+    display: flex;
+    align-items:flex-end;
+    width: 100%;
+}
+
+.a{
+    display: inline-block;
+    width: 30%;
+}
+
+.b{
+    display: inline-block;
+    width: 25%;
+}
+
+.c{
+    display: inline-block;
 }
 
 .age{
     color: #F7C119;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin-bottom: 0;
 }
 
 .agePercentage{
     color: #37596D;
-    font-size: 50px;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 .man{
-    height: 80px;
-    width: 40px;
-}
-
-.heading3{
-    padding-left: 50px;
+    height: 5rem;
+    width: 2.5rem;
 }
 
 .healthy{
     color: #19AEC2;
-    font-size: 29px;
+    font-size: 3rem;
     text-align: center;
-    padding-left: 40px;
 }
 
-.protein{
+.fnb{
     display: flex;
-    justify-content: center;
-    position: relative;
+    align-items: flex-end;
+    width: 100%;
 }
 
-.protein img{
-    height: 100px;
-    width: 150px;
+.f2{
+    margin: 0 1rem 0 1rem;
+}
+
+.f2 h1{
+    color: #F7C119;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.emage{
+    width: 29%;
+}
+
+.pic{
+    display: flex;
+}
+
+.pic img{
+    height: 100%;
     display: inline-block;
-    position: absolute;
-    bottom: 0%;
-    position: absolute;
-    bottom: 0%;
-    padding-left: 20px;
 }
 
 .disease{
     color: #37596D;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .people{
     color: #F7C119;
+    font-size: 3rem;
 }
 
 .people span{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .round{
-    width: 100px;
-    height: 100px;
-    border: 2px solid #37596D;
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem solid #37596D;
     border-radius: 50%;
-    /* margin-left: 0%;
-    margin-right: 0%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.eating{
-    margin-bottom: 0%;
-}
-
 .rounded{
-    
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .round img{
-    height: 70px;
-    width: 60px;
+    height: 7rem;
+    width: 6rem;
 }
 
-@media screen and (max-width: 575px) {
-    #col1{
-        background-image: linear-gradient(to right, rgb(59, 160, 218) 55%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 17px 1px;
-    background-repeat: repeat-x;
-    margin-bottom: 10px;
+@media screen and (max-width: 1200px) {
+
+    html{
+        font-size: 50%;
+    } 
+
+    .flyer{
+        width: 50%;
+    }
+    
+    .mid{
+        display: none;
+    }
+    
+    #col2{
+        margin-top: 1rem;
+    }
+
+    .nearly img{
+        width: 60%;
+    }
+
+    .nearly{
+        width: 80%;
+    }
+
+    .nearly div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .million{
+        text-align: center;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .flyer{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .flyer{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    html{
+        font-size: 20%;
     }
 }
